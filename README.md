@@ -5,6 +5,9 @@
 1.  E-Signature-App
 > Select the date and type name to dynamically update the info on DOM.
 
+2.  Randomize Colors
+> Click on buttons to change the heading color and body background with random color.
+
 ## Technologies Used
 1.  ReactJS
 2.  React DOM
