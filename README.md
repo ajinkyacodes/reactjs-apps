@@ -8,6 +8,9 @@
 2.  Randomize Colors
 > Click on buttons to change the heading color and body background with random color.
 
+3.  Like My Photo App
+> Click on heart icon to hit like or doubble tap on piture to like.
+
 ## Technologies Used
 1.  ReactJS
 2.  React DOM
