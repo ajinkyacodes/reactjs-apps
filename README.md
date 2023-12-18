@@ -6,17 +6,21 @@
 > Select the date and type name to dynamically update the info on DOM.
 
 2.  Randomize Colors
-> Click on buttons to change the heading color and body background with random color.
+> Click on buttons to change the heading color and body background with a random color.
 
 3.  Like My Photo App
-> Click on heart icon to hit like or doubble tap on piture to like.
+> Click on the heart icon to hit like or double tap on the picture to like.
 
-3.  Testimonials App
-> Click on posts, users or comments button to load the JSON Placeholder API data.
+4.  Testimonials App
+> Click on the posts, users, or comments button to load the JSON Placeholder API data.
+
+5.  Alerts
+> Fixed alerts and time-triggered alerts that you can use according to your preference.
 
 ## Technologies Used
 1.  ReactJS
 2.  React DOM
+3. React Icons
 
 ## Prerequisites
 - Git
