@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Button from "./Button";
 
-export default function Alert({ type, message }) {
+export default function Alert({ type, message, delay=false, delayTime=3000 }) {
   const [showAlert, setShowAlert] = useState(true);
   
   const closeAlert = (e)=> {
@@ -11,6 +11,12 @@ export default function Alert({ type, message }) {
         setShowAlert(false);
     }, 400)
   };
+
+  useEffect(()=>{
+    delay && setTimeout(()=>{
+        setShowAlert(false);
+    },delayTime);
+  });
 
   return (
     showAlert && (
