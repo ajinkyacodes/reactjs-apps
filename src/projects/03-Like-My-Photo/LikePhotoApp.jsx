@@ -21,14 +21,13 @@ export default function LikePhotoApp() {
       <Title text={"Like Photo App"} />
       <Title classes={"subtitle"} text={`Likes ${count}`} />
       <div
-        className="card card-dark m-auto shadow-md"
-        style={{ width: 300, cursor: "pointor" }}
+        className="card card-dark m-auto shadow-md" style={{ width: 300, cursor: "pointor", userSelect: "none" }}
       >
         <div className="card-header fs-xl">
-          <AiFillSmile className="mr-2" />
+          <AiFillSmile className="mr-2" style={{verticalAlign: "middle"}} />
           <small>DogyDog</small>
         </div>
-        <img src={Photo} alt="img" style={{ height: "fit-content" }} />
+        <img src={Photo} alt="img" style={{ height: "fit-content" }} onDoubleClick={toggleLike} />
         <div
           className="card-footer fs-xl d-flex"
           style={{ justifyContent: "space-between" }}
