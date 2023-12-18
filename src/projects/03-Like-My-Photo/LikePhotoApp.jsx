@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Title from "../../components/Title";
 import { AiFillSmile, AiFillHeart, AiOutlineHeart, AiOutlineComment } from "react-icons/ai";
 import Photo from "./img/dog.jpg";
 
 export default function LikePhotoApp() {
-  let like=true;
+  // let like=true;
+  const [like, setLike] = useState(false);
+  const [count, setCount] = useState(0);
+  const toggleLike = ()=> {
+    if(!like) {
+      setLike(true);
+      setCount(count + 1);
+    } else {
+      setLike(false);
+      setCount(count - 1);
+    }
+  };
   return (
     <div className="conatianer text-center">
       <Title text={"Like Photo App"} />
-      <Title classes={"subtitle"} text={"Likes"} />
+      <Title classes={"subtitle"} text={`Likes ${count}`} />
       <div
-        className="card card-dark m-auto"
+        className="card card-dark m-auto shadow-md"
         style={{ width: 300, cursor: "pointor" }}
       >
         <div className="card-header fs-xl">
@@ -23,7 +34,7 @@ export default function LikePhotoApp() {
           style={{ justifyContent: "space-between" }}
         >
           <AiOutlineComment />{" "}
-          {like ? <AiFillHeart className="text-danger" /> : <AiOutlineHeart />}
+          {like ? <AiFillHeart className="text-danger" onClick={toggleLike} /> : <AiOutlineHeart onClick={toggleLike} />}
         </div>
       </div>
     </div>
