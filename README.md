@@ -11,6 +11,9 @@
 3.  Like My Photo App
 > Click on heart icon to hit like or doubble tap on piture to like.
 
+3.  Testimonials App
+> Click on posts, users or comments button to load the JSON Placeholder API data.
+
 ## Technologies Used
 1.  ReactJS
 2.  React DOM
