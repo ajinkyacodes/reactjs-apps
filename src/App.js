@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
+import LightDarkMode from "./projects/07-Light-Dark-Mode/LightDarkMode";
 import TermeratureController from "./projects/06-Temperature-Controller/TermeratureController";
 import AlertApp from './projects/05-Alerts/AlertApp';
 import TestimonialsApp from './projects/04-Testimonials-App/TestimonialsApp';
@@ -21,6 +22,7 @@ function App() {
         <Route path="/project4" element={<TestimonialsApp />} />
         <Route path="/project5" element={<AlertApp />} />
         <Route path="/project6" element={<TermeratureController />} />
+        <Route path="/project7" element={<LightDarkMode />} />
       </Routes>
     </div>
   );
