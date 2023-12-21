@@ -2,11 +2,13 @@
 > This repo contains multiple mini-apps built using ReactJS functional components.
 
 ## Projects List
-1.  E-Signature App [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/dev/src/projects/01-E-Signature-App)
-2.  Randomize Colors [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/dev/src/projects/02-Randomize-Colors)
-3.  Like My Photo App [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/dev/src/projects/03-Like-My-Photo)
-4.  Testimonials App [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/dev/src/projects/04-Testimonials-App)
-5.  Alerts App [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/dev/src/projects/05-Alerts)
+1.  E-Signature App [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/01-E-Signature-App)
+2.  Randomize Colors [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/02-Randomize-Colors)
+3.  Like My Photo App [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/03-Like-My-Photo)
+4.  Testimonials App [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/04-Testimonials-App)
+5.  Alerts App [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/05-Alerts)
+6.  Temperature Controller [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/06-Temperature-Controller)
+7.  Light Dark Mode [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/07-Light-Dark-Mode)
 
 ## Technologies Used
 1.  React JS
