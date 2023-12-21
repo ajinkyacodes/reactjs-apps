@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LockSlider from "./LockSlider";
 import { AiFillUnlock } from "react-icons/ai";
 import LockScreenImg from "./img/moon.jpg";
@@ -8,9 +8,38 @@ export default function SlideToUnlock() {
   const [uiProps, setUiProps] = useState({
     uiText: "Unlock Screen",
     uiColor: "#eee",
-    uiBg: `Url(${LockScreenImg}) center/cover no-repeat`
+    uiBg: `Url(${LockScreenImg}) center/cover no-repeat`,
   });
   const [showLockSlider, setShowLockSlider] = useState(true);
+  const [lockSliderValue, setLockSliderValue] = useState(0);
+
+  const handleLockSliderInput = (e) => {
+    setLockSliderValue(e.target.value);
+    // console.log(e.target.value);
+  };
+
+  const lockScreen = () => {
+    setLockSliderValue(0);
+    setShowLockSlider(true);
+    setUiProps({
+      uiText: "Unlock Screen",
+      uiColor: "#eee",
+      uiBg: `Url(${LockScreenImg}) center/cover no-repeat`,
+    });
+  };
+
+  useEffect(() => {
+    document.body.style.background = "#999";
+    if (lockSliderValue === "100") {
+      setShowLockSlider(false);
+      setLockSliderValue(0);
+      setUiProps({
+        uiText: "Lock Screen",
+        uiColor: "#222",
+        uiBg: `Url(${HomeScreenImg}) center/cover no-repeat`,
+      });
+    }
+  }, [lockSliderValue]);
 
   return (
     <div
@@ -23,11 +52,17 @@ export default function SlideToUnlock() {
         background: uiProps.uiBg,
       }}
     >
-      <h1 className="title" style={{ color: uiProps.uiColor }} >{uiProps.uiText}</h1>
+      <h1 className="title" style={{ color: uiProps.uiColor }}>
+        {uiProps.uiText}
+      </h1>
       {showLockSlider ? (
-        <LockSlider width={"250px"} />
+        <LockSlider
+          width={"250px"}
+          handleInput={handleLockSliderInput}
+          value={lockSliderValue}
+        />
       ) : (
-        <AiFillUnlock className="unlockIcon" />
+        <AiFillUnlock className="unlockIcon" onClick={lockScreen} />
       )}
     </div>
   );
