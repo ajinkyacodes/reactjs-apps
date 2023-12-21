@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function List() {
   return (
     <div className="container">
-      <Title text="All Projects List" classes={"title  text-info"} />
+      <Title text="Applications List" classes={"title  text-info"} />
       <nav className="navbar">
         <ul>
           <li>
@@ -28,6 +28,9 @@ export default function List() {
           </li>
           <li>
             <Link to="/project7"><Title classes={"fs-lg my-1"} text={"07. Light Dark Mode"}/></Link>
+          </li>
+          <li>
+            <Link to="/project8"><Title classes={"fs-lg my-1"} text={"08. Slide To Unlock"}/></Link>
           </li>
         </ul>
       </nav>

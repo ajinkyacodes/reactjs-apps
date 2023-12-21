@@ -2,14 +2,15 @@ import "./App.css";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import LightDarkMode from "./projects/07-Light-Dark-Mode/LightDarkMode";
-import TermeratureController from "./projects/06-Temperature-Controller/TermeratureController";
-import AlertApp from './projects/05-Alerts/AlertApp';
-import TestimonialsApp from './projects/04-Testimonials-App/TestimonialsApp';
-import LikePhotoApp from "./projects/03-Like-My-Photo/LikePhotoApp";
-import RandomizeColors from "./projects/02-Randomize-Colors/RandomizeColors";
-import EsignatureApp from "./projects/01-E-Signature-App/EsignatureApp";
 import Home from "./pages/Home";
+import EsignatureApp from "./projects/01-E-Signature-App/EsignatureApp";
+import RandomizeColors from "./projects/02-Randomize-Colors/RandomizeColors";
+import LikePhotoApp from "./projects/03-Like-My-Photo/LikePhotoApp";
+import TestimonialsApp from './projects/04-Testimonials-App/TestimonialsApp';
+import AlertApp from './projects/05-Alerts/AlertApp';
+import TermeratureController from "./projects/06-Temperature-Controller/TermeratureController";
+import LightDarkMode from "./projects/07-Light-Dark-Mode/LightDarkMode";
+import SlideToUnlock from "./projects/08-Slide-To-Unlock/SlideToUnlock";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/project5" element={<AlertApp />} />
         <Route path="/project6" element={<TermeratureController />} />
         <Route path="/project7" element={<LightDarkMode />} />
+        <Route path="/project8" element={<SlideToUnlock />} />
       </Routes>
     </div>
   );
