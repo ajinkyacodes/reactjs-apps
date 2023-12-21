@@ -23,6 +23,9 @@ export default function List() {
           <li>
             <Link to="/project5"><Title classes={"fs-lg my-1"} text={"05. Alerts App"}/></Link>
           </li>
+          <li>
+            <Link to="/project6"><Title classes={"fs-lg my-1"} text={"06. Temperature Controller"}/></Link>
+          </li>
         </ul>
       </nav>
     </div>

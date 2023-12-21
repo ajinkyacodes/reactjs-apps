@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
+import TermeratureController from "./projects/06-Temperature-Controller/TermeratureController";
 import AlertApp from './projects/05-Alerts/AlertApp';
 import TestimonialsApp from './projects/04-Testimonials-App/TestimonialsApp';
 import LikePhotoApp from "./projects/03-Like-My-Photo/LikePhotoApp";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/project3" element={<LikePhotoApp />} />
         <Route path="/project4" element={<TestimonialsApp />} />
         <Route path="/project5" element={<AlertApp />} />
+        <Route path="/project6" element={<TermeratureController />} />
       </Routes>
     </div>
   );
