@@ -32,6 +32,9 @@ export default function List() {
           <li>
             <Link to="/project8"><Title classes={"fs-lg my-1"} text={"08. Slide To Unlock"}/></Link>
           </li>
+          <li>
+            <Link to="/project9"><Title classes={"fs-lg my-1"} text={"09. Slider App"}/></Link>
+          </li>
         </ul>
       </nav>
     </div>

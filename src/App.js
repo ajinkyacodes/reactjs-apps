@@ -11,6 +11,7 @@ import AlertApp from './projects/05-Alerts/AlertApp';
 import TermeratureController from "./projects/06-Temperature-Controller/TermeratureController";
 import LightDarkMode from "./projects/07-Light-Dark-Mode/LightDarkMode";
 import SlideToUnlock from "./projects/08-Slide-To-Unlock/SlideToUnlock";
+import SliderApp from "./projects/09-Slider-App/SliderApp";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/project6" element={<TermeratureController />} />
         <Route path="/project7" element={<LightDarkMode />} />
         <Route path="/project8" element={<SlideToUnlock />} />
+        <Route path="/project9" element={<SliderApp />} />
       </Routes>
     </div>
   );
