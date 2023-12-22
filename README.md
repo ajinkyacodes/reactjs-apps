@@ -10,6 +10,7 @@
 6.  Temperature Controller [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/06-Temperature-Controller)
 7.  Light Dark Mode [:memo:](https://github.com/ajinkyacodes/reactjs-components/tree/master/src/projects/07-Light-Dark-Mode)
 8.  Slide To Unlock [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/08-Slide-To-Unlock)
+9.  Slider App [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/09-Slider-App)
 
 ## Technologies Used
 1.  React JS
