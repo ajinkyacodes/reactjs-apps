@@ -12,6 +12,7 @@ import TermeratureController from "./projects/06-Temperature-Controller/Termerat
 import LightDarkMode from "./projects/07-Light-Dark-Mode/LightDarkMode";
 import SlideToUnlock from "./projects/08-Slide-To-Unlock/SlideToUnlock";
 import SliderApp from "./projects/09-Slider-App/SliderApp";
+import HiddenSearchBar from "./projects/10-Hidden-Search-Bar/HiddenSearchBar";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/project7" element={<LightDarkMode />} />
         <Route path="/project8" element={<SlideToUnlock />} />
         <Route path="/project9" element={<SliderApp />} />
+        <Route path="/project10" element={<HiddenSearchBar />} />
       </Routes>
     </div>
   );
