@@ -3,6 +3,8 @@ import Title from "../components/Title";
 import { Link } from "react-router-dom";
 
 export default function List() {
+  let bodyHome = document.querySelector("body");
+  bodyHome.style.background = "transparent";
   return (
     <div className="container">
       <Title text="Applications List" classes={"title  text-info"} />
@@ -34,6 +36,9 @@ export default function List() {
           </li>
           <li>
             <Link to="/project9"><Title classes={"fs-lg my-1"} text={"09. Slider App"}/></Link>
+          </li>
+          <li>
+            <Link to="/project10"><Title classes={"fs-lg my-1"} text={"10. Hidden Search Bar"}/></Link>
           </li>
         </ul>
       </nav>
