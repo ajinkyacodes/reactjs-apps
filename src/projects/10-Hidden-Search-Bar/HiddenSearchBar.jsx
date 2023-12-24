@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BsSearch } from "react-icons/bs";
 
 export default function HiddenSearchBar() {
@@ -8,6 +8,7 @@ export default function HiddenSearchBar() {
     transition: "all .3s ease",
     opacity: 0,
     showSearchIcon: true,
+    showSearchBar: false,
     borderBottomColor: `#fff`,
   });
 
@@ -37,16 +38,24 @@ export default function HiddenSearchBar() {
     right: 20,
   };
 
-  useEffect(() => {
-    body.background = uiProps.bg;
-    body.boxShadow = uiProps.shadow;
-    body.transition = uiProps.transition;
-  }, [uiProps.shadow]);
+  const inputEl = useRef(null);
+
+  useEffect(
+    () => {
+      body.background = uiProps.bg;
+      body.boxShadow = uiProps.shadow;
+      body.transition = uiProps.transition;
+      uiProps.showSearchBar && inputEl.current.focus();
+    },
+    [uiProps.shadow],
+    [uiProps.showSearchBar]
+  );
 
   const showSearch = () => {
     setUiProps({
       opacity: 1,
       showSearchIcon: false,
+      showSearchBar: true,
     });
   };
 
@@ -57,7 +66,7 @@ export default function HiddenSearchBar() {
     });
   };
 
-  const handleSearchBlur = (e) => {
+  const handleSearchBlur = () => {
     setUiProps({
       shadow: "none",
       opacity: 0,
@@ -68,16 +77,18 @@ export default function HiddenSearchBar() {
 
   return (
     <div className="container" style={{ height: "100vh" }}>
-      <input
-        type="text"
-        placeholder="Search"
-        style={inputStyle}
-        onFocus={handleSearchFocus}
-        onBlur={handleSearchBlur}
-      />
       {uiProps.showSearchIcon ? (
         <BsSearch style={BsSearchStyle} onClick={showSearch} />
-      ) : null}
+      ) : (
+        <input
+          type="text"
+          placeholder="Search"
+          style={inputStyle}
+          onFocus={handleSearchFocus}
+          onBlur={handleSearchBlur}
+          ref={inputEl}
+        />
+      )}
     </div>
   );
 }
