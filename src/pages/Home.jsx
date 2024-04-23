@@ -40,6 +40,9 @@ export default function List() {
           <li>
             <Link to="/project10"><Title classes={"fs-lg my-1"} text={"10. Hidden Search Bar"}/></Link>
           </li>
+          <li>
+            <Link to="/project11"><Title classes={"fs-lg my-1"} text={"11. Magic Popup"}/></Link>
+          </li>
         </ul>
       </nav>
     </div>
