@@ -12,6 +12,7 @@
 8.  Slide To Unlock [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/08-Slide-To-Unlock)
 9.  Slider App [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/09-Slider-App)
 10. Hidden Search Bar [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/10-Hidden-Search-Bar)
+11. Magic Popup [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/11-MagicPopup)
 
 ## Technologies Used
 1.  React JS
