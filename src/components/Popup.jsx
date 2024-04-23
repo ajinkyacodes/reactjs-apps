@@ -23,7 +23,7 @@ export default function Popup({ type, title, text, handleClose }) {
 						<h4 className='mb-1'>{title && title}</h4>
 						<p>{text && text}</p>
 					</div>
-					<Button classes={'btn-close'} text={"x"} onClick={handleClose} />
+					<Button classes={'btn-close'} text={"x"} onClick={()=>handleClose(false)} />
 				</div>
 			</div>
 		</div>
