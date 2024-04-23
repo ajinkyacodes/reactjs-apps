@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
 
-export default function Popup({ type, title, text, handleClose }) {
+export default function Popup({ type, title, text, handleClose, trigger }) {
 	const popupContainer = {
 		position: 'absolute',
 		top: '0',
@@ -15,7 +15,7 @@ export default function Popup({ type, title, text, handleClose }) {
 		margin: '40vh auto',
 		zIndex: '1',
 	};
-	return (
+	return trigger && (
 		<div style={popupContainer}>
 			<div className={`${type}`} style={popupStyle}>
 				<div className='alert-close'>
