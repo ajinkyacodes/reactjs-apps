@@ -3,7 +3,7 @@ import Title from '../../components/Title';
 import { Progressbar } from '../../components/Progressbar';
 
 export default function ProgressBarContainer() {
-	const [completed, setCompleted] = useState(0);
+	const [completed, setCompleted] = useState(51);
 	const [status, setStatus] = useState({
         ui: 20,
         ux: 73,
@@ -28,6 +28,7 @@ export default function ProgressBarContainer() {
 
 	useEffect(() => {
 		uiInput.current.focus();
+        setInterval(()=>setCompleted(Math.floor(Math.random()*100)+1), 2000)
 	}, []);
 
 	return (
@@ -76,6 +77,10 @@ export default function ProgressBarContainer() {
 				bgColor={date.bgColor}
 				completed={date.completed}
 			/>))}
+            <Progressbar
+				bgColor={completed > 50 ? "#7633f9" : '#dc3545'}
+				completed={completed}
+			/>
 			
 		</div>
 	);
