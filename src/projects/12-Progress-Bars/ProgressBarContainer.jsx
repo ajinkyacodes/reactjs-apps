@@ -4,11 +4,16 @@ import { Progressbar } from '../../components/Progressbar';
 
 export default function ProgressBarContainer() {
 	const [completed, setCompleted] = useState(0);
+	const [status, setStatus] = useState({
+        ui: 20,
+        ux: 73,
+        data: 20,
+    });
 
 	const projectDate = [
-		{ bgColor: '#7633f9', completed: 57 },
-		{ bgColor: '#28a745', completed: 88 },
-		{ bgColor: '#dc3545', completed: 20 },
+		{ bgColor: '#7633f9', completed: status.ui },
+		{ bgColor: '#28a745', completed: status.ux },
+		{ bgColor: '#dc3545', completed: status.data },
 	];
 
 	const inputStyle = {
@@ -23,7 +28,7 @@ export default function ProgressBarContainer() {
 
 	useEffect(() => {
 		uiInput.current.focus();
-	});
+	}, []);
 
 	return (
 		<div className='container container-sm mx-auto text-center'>
@@ -36,8 +41,10 @@ export default function ProgressBarContainer() {
 						type='number'
 						style={inputStyle}
 						ref={uiInput}
-						value={''}
-						onChange={(e) => console.log(e.target.value)}
+						value={status.ui}
+                        min={0}
+                        max={100}
+						onChange={(e) => setStatus({...status , ui: e.target.value})}
 					/>
 				</li>
 				<li>
@@ -45,8 +52,10 @@ export default function ProgressBarContainer() {
 					<input
 						type='number'
 						style={inputStyle}
-						value={''}
-						onChange={(e) => console.log(e.target.value)}
+						value={status.ux}
+                        min={0}
+                        max={100}
+						onChange={(e) => setStatus({...status , ux: e.target.value})}
 					/>
 				</li>
 				<li>
@@ -54,8 +63,10 @@ export default function ProgressBarContainer() {
 					<input
 						type='number'
 						style={inputStyle}
-						value={''}
-						onChange={(e) => console.log(e.target.value)}
+						value={status.data}
+                        min={0}
+                        max={100}
+						onChange={(e) => setStatus({...status , data: e.target.value})}
 					/>
 				</li>
 			</ul>
