@@ -1,5 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import Title from '../../components/Title';
+import { Progressbar } from '../../components/Progressbar';
+
 export default function ProgressBarContainer() {
 	const inputStyle = {
 		width: 50,
@@ -49,6 +51,8 @@ export default function ProgressBarContainer() {
 					/>
 				</li>
 			</ul>
+            {/* Progress bars */}
+            <Progressbar />
 		</div>
 	);
 }
