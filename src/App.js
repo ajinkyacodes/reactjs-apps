@@ -14,6 +14,7 @@ import SlideToUnlock from "./projects/08-Slide-To-Unlock/SlideToUnlock";
 import SliderApp from "./projects/09-Slider-App/SliderApp";
 import HiddenSearchBar from "./projects/10-Hidden-Search-Bar/HiddenSearchBar";
 import PopupApp from "./projects/11-MagicPopup/PopupApp";
+import ProgressBarContainer from "./projects/12-Progress-Bars/ProgressBarContainer";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/project9" element={<SliderApp />} />
         <Route path="/project10" element={<HiddenSearchBar />} />
         <Route path="/project11" element={<PopupApp />} />
+        <Route path="/project12" element={<ProgressBarContainer />} />
       </Routes>
     </div>
   );
