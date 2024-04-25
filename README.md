@@ -14,6 +14,7 @@
 10. Hidden Search Bar [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/10-Hidden-Search-Bar)
 11. Magic Popup [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/11-MagicPopup)
 12. Progress Bars [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/12-Progress-Bars)
+13. Dialog Box [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/13-Dialog-Box)
 
 ## Technologies Used
 1.  React JS
