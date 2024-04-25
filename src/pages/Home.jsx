@@ -46,6 +46,9 @@ export default function List() {
           <li>
             <Link to="/project12"><Title classes={"fs-lg my-1"} text={"12. Progress Bar Container"}/></Link>
           </li>
+          <li>
+            <Link to="/project13"><Title classes={"fs-lg my-1"} text={"13. Dialog Box"}/></Link>
+          </li>
         </ul>
       </nav>
     </div>
