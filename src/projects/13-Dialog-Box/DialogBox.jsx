@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from '../../components/Button';
 import { BsFillEmojiFrownFill, BsFillEmojiSmileFill } from 'react-icons/bs';
-
+import './Bounce.css';
 export default function DialogBox({ width = 350 }) {
 	const [subscription, setSubscription] = useState({
 		title: 'Hello',
@@ -45,10 +45,19 @@ export default function DialogBox({ width = 350 }) {
             setIcon(<BsFillEmojiFrownFill style={iconStyle} />);
             document.body.style.background = "rgba(25,118,160,0.4)";
         }
-    }, [subscription.state])
+    }, [subscription.state]);
+
+	const [bounce, setBounce] = useState('');
+
+	useEffect(()=> {
+		setTimeout(() => {
+			setBounce("");
+		}, 500);
+		return () => setBounce("bounce");
+	}, [subscription.state]);
 
 	return (
-		<div className='card bg-light m-auto mt-4' style={{ width: 350 }}>
+		<div className={`card bg-light m-auto mt-4 ${bounce}`} style={{ width: 350 }}>
 			<div className='card-body'>
 				<div
 					className='d-grid'
