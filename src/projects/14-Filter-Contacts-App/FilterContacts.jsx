@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Title from '../../components/Title';
 import ContactsData from './Data.json';
 import Contact from './Contact';
@@ -8,6 +8,9 @@ export default function FilterContacts() {
 	useEffect(() => {
 		inputSearch.current.focus();
 	});
+
+	const [searchContact, setSearchContact] = useState('');
+
 	return (
 		<div className='text-center'>
 			<Title text={'Filter Contacts App'} />
@@ -17,6 +20,7 @@ export default function FilterContacts() {
 				className='mb-2'
 				style={{ padding: '.3rem .5rem' }}
 				ref={inputSearch}
+				onChange={(e) => setSearchContact(e.target.value)}
 			/>
 			<section
 				className='d-flex'
@@ -27,7 +31,17 @@ export default function FilterContacts() {
 					flexWrap: 'wrap',
 				}}
 			>
-				{ContactsData.map((contact) => (
+				{ContactsData.filter((contact) => {
+					if (searchContact === '') {
+						return contact;
+					} else if (
+						contact.first_name
+							.toLocaleLowerCase()
+							.includes(searchContact.toLocaleLowerCase())
+					) {
+						return contact;
+					}
+				}).map((contact) => (
 					<Contact
 						contact={contact}
 						cardColor={'card-info'}
