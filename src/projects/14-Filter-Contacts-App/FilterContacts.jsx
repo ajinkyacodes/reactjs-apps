@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import Title from '../../components/Title';
 import ContactsData from './Data.json';
+import Contact from './Contact';
 
 export default function FilterContacts() {
 	let inputSearch = useRef(null);
@@ -19,12 +20,19 @@ export default function FilterContacts() {
 			/>
 			<section
 				className='d-flex'
-				style={{ gap: 15, maxWidth: 1600, margin: 'auto' }}
+				style={{
+					gap: 15,
+					maxWidth: '1600px',
+					margin: 'auto',
+					flexWrap: 'wrap',
+				}}
 			>
 				{ContactsData.map((contact) => (
-					<ul>
-						<li>{contact.last_name}</li>
-					</ul>
+					<Contact
+						contact={contact}
+						cardColor={'card-info'}
+						textColor={'text-dark'}
+					/>
 				))}
 			</section>
 		</div>
