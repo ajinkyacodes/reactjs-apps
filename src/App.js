@@ -16,6 +16,7 @@ import HiddenSearchBar from "./projects/10-Hidden-Search-Bar/HiddenSearchBar";
 import PopupApp from "./projects/11-MagicPopup/PopupApp";
 import ProgressBarContainer from "./projects/12-Progress-Bars/ProgressBarContainer";
 import DialogBox from "./projects/13-Dialog-Box/DialogBox";
+import FilterContacts from "./projects/14-Filter-Contacts-App/FilterContacts";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/project11" element={<PopupApp />} />
         <Route path="/project12" element={<ProgressBarContainer />} />
         <Route path="/project13" element={<DialogBox />} />
+        <Route path="/project14" element={<FilterContacts />} />
       </Routes>
     </div>
   );

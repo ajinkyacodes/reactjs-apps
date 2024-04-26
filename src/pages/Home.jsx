@@ -49,6 +49,9 @@ export default function List() {
           <li>
             <Link to="/project13"><Title classes={"fs-lg my-1"} text={"13. Dialog Box"}/></Link>
           </li>
+          <li>
+            <Link to="/project14"><Title classes={"fs-lg my-1"} text={"14. Filter Contacts"}/></Link>
+          </li>
         </ul>
       </nav>
     </div>
