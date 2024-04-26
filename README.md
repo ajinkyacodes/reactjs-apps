@@ -15,6 +15,7 @@
 11. Magic Popup [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/11-MagicPopup)
 12. Progress Bars [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/12-Progress-Bars)
 13. Dialog Box [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/13-Dialog-Box)
+14. Filter Contacts [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/14-Filter-Contacts-App)
 
 ## Technologies Used
 1.  React JS
