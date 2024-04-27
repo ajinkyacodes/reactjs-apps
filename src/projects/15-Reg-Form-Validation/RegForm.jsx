@@ -32,6 +32,7 @@ export default function RegForm() {
 	};
 
 	const [submit, setSubmit] = useState(false);
+	const [valid, setValid] = useState(false);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -42,13 +43,28 @@ export default function RegForm() {
 		} else if (!values.password) {
 			inputPassword.current.focus();
 		}
+		if(values.user_name && values.email && values.password) {
+			setValid(true);
+		}
 		setSubmit(true);
 	};
 
 	return (
 		<div className='m-auto'>
-			{/* Form Design */}
-			<div className='container m-auto mt-4 p-2 shadow-sm border-5'>
+			{/* Alert and Welcome */}
+
+			{submit && valid ? (
+			<>
+			<Alert
+				type={'success'}
+				message='Registration is successful!'
+				delay={true}
+				delayTime={5000}
+			/>
+			<Title text={`Welcome ${values.user_name}`} />
+			</>
+			)
+			: <div className='container m-auto mt-4 p-2 shadow-sm border-5'>
 				<Title text='Registration' />
 				<form onSubmit={handleSubmit}>
 					<div className='form-group'>
@@ -95,7 +111,7 @@ export default function RegForm() {
 					</div>
 					<Button classes={'btn-primary btn-lg btn-block'} text='Register' />
 				</form>
-			</div>
+			</div>}
 		</div>
 	);
 }
