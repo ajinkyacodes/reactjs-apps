@@ -1,0 +1,2 @@
+# Registration Form Validation
+> It's a Registration form with different fields such as Name, Email and Password. It has a basic validation. Once submitted a form alert popup appears and then welcomes the user with username. 
