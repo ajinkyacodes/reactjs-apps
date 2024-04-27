@@ -17,6 +17,7 @@ import PopupApp from "./projects/11-MagicPopup/PopupApp";
 import ProgressBarContainer from "./projects/12-Progress-Bars/ProgressBarContainer";
 import DialogBox from "./projects/13-Dialog-Box/DialogBox";
 import FilterContacts from "./projects/14-Filter-Contacts-App/FilterContacts";
+import RegForm from "./projects/15-Reg-Form-Validation/RegForm";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/project12" element={<ProgressBarContainer />} />
         <Route path="/project13" element={<DialogBox />} />
         <Route path="/project14" element={<FilterContacts />} />
+        <Route path="/project15" element={<RegForm />} />
       </Routes>
     </div>
   );
