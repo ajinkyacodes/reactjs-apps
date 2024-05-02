@@ -18,6 +18,7 @@ import ProgressBarContainer from "./projects/12-Progress-Bars/ProgressBarContain
 import DialogBox from "./projects/13-Dialog-Box/DialogBox";
 import FilterContacts from "./projects/14-Filter-Contacts-App/FilterContacts";
 import RegForm from "./projects/15-Reg-Form-Validation/RegForm";
+import NotesApp from "./projects/16-Notes-App/NotesApp";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/project13" element={<DialogBox />} />
         <Route path="/project14" element={<FilterContacts />} />
         <Route path="/project15" element={<RegForm />} />
+        <Route path="/project16" element={<NotesApp />} />
       </Routes>
     </div>
   );

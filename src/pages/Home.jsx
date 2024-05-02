@@ -55,6 +55,9 @@ export default function List() {
           <li>
             <Link to="/project15"><Title classes={"fs-lg my-1"} text={"15. Registration Form Validation"}/></Link>
           </li>
+          <li>
+            <Link to="/project16"><Title classes={"fs-lg my-1"} text={"16. Notes App"}/></Link>
+          </li>
         </ul>
       </nav>
     </div>
