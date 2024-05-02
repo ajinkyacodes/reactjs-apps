@@ -17,6 +17,7 @@
 13. Dialog Box [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/13-Dialog-Box)
 14. Filter Contacts [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/14-Filter-Contacts-App)
 15. Registration Form Validation [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/15-Reg-Form-Validation)
+16. Notes App [:memo:](https://github.com/ajinkyacodes/reactjs-apps/tree/master/src/projects/16-Notes-App)
 
 ## Technologies Used
 1.  React JS
