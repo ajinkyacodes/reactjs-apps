@@ -11,6 +11,10 @@ export default function NotesApp() {
 		setNotes(newNotes);
 	};
 
+    const deleteNote = (id)=>{
+        setNotes(notes.filter((note)=>note.id!==id));
+    }
+
 	return (
 		<div className='container'>
 			<Button classes={'btn-info'} text={'+ New note'} onClick={addNewNote} />
@@ -19,9 +23,8 @@ export default function NotesApp() {
 				style={{ gap: 25, flexWrap: 'wrap' }}
 			></div>
 			{notes.map((note) => (
-				<NewNote key={note.id} note={note} />
+				<NewNote key={note.id} note={note} onClick={deleteNote} />
 			))}
-            {notes.map((note)=>console.log(note.id))}
 		</div>
 	);
 }
