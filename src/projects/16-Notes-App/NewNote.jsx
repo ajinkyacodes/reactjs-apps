@@ -1,7 +1,20 @@
-import React from 'react'
-
+import React from 'react';
+import { NoteStyle, Icons, DeleteIcon } from './NoteStyle';
+import { MdOutlineNoteAlt, MdDeleteForever } from 'react-icons/md';
 export default function NewNote() {
-  return (
-    <div>NewNote</div>
-  )
+	return (
+		<NoteStyle className='card'>
+			<div className='card-header text-right'>
+        <Icons>
+          <MdOutlineNoteAlt />
+          <DeleteIcon>
+            <MdDeleteForever />
+          </DeleteIcon>
+        </Icons>
+			</div>
+      <div className="card-body">
+        <textarea style={{border: "none", outline: "none" }}></textarea>
+      </div>
+		</NoteStyle>
+	);
 }
